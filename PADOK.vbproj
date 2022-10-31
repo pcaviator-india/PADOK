@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99EE0AA3-F459-44B9-9A4A-775A9A410207}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PADOK.My.MyApplication</StartupObject>
+    <RootNamespace>PADOK</RootNamespace>
+    <AssemblyName>PADOK</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PADOK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PADOK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommanFunctions.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAttendence.designer.vb">
+      <DependentUpon>frmAttendence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAttendence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAttendenceDetail.designer.vb">
+      <DependentUpon>frmAttendenceDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAttendenceDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAttendenceRegister.designer.vb">
+      <DependentUpon>frmAttendenceRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAttendenceRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryCreate.designer.vb">
+      <DependentUpon>frmCategoryCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryEdit.designer.vb">
+      <DependentUpon>frmCategoryEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryVIew.designer.vb">
+      <DependentUpon>frmCategoryVIew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryVIew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrentStock.designer.vb">
+      <DependentUpon>frmCurrentStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrentStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCutting.designer.vb">
+      <DependentUpon>frmCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuttingView.designer.vb">
+      <DependentUpon>frmCuttingView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuttingView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDayBook.designer.vb">
+      <DependentUpon>frmDayBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDayBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDayBookView.designer.vb">
+      <DependentUpon>frmDayBookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDayBookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupCreate.designer.vb">
+      <DependentUpon>frmGroupCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupEdit.designer.vb">
+      <DependentUpon>frmGroupEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupView.designer.vb">
+      <DependentUpon>frmGroupView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemEdit.designer.vb">
+      <DependentUpon>frmItemEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemView.designer.vb">
+      <DependentUpon>frmItemView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJob-Issue.designer.vb">
+      <DependentUpon>frmJob-Issue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJob-Issue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobWorkReceive.designer.vb">
+      <DependentUpon>frmJobWorkReceive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobWorkReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobWorkReceived.designer.vb">
+      <DependentUpon>frmJobWorkReceived.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobWorkReceived.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerCreate.designer.vb">
+      <DependentUpon>frmLedgerCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerEdit.designer.vb">
+      <DependentUpon>frmLedgerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerView.designer.vb">
+      <DependentUpon>frmLedgerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLink.designer.vb">
+      <DependentUpon>frmLink.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLink.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewItem.designer.vb">
+      <DependentUpon>frmNewItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewJobWorker.designer.vb">
+      <DependentUpon>frmNewJobWorker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewJobWorker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewSupplier.designer.vb">
+      <DependentUpon>frmNewSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewUnit.designer.vb">
+      <DependentUpon>frmNewUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseEdit.designer.vb">
+      <DependentUpon>frmPurchaseEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseEditDetail.designer.vb">
+      <DependentUpon>frmPurchaseEditDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseEditDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseNew.designer.vb">
+      <DependentUpon>frmPurchaseNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseView.designer.vb">
+      <DependentUpon>frmPurchaseView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsCreate.designer.vb">
+      <DependentUpon>frmReportsCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesNew.designer.vb">
+      <DependentUpon>frmSalesNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPurId.designer.vb">
+      <DependentUpon>frmSelectPurId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPurId.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShipmentPacking.designer.vb">
+      <DependentUpon>frmShipmentPacking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShipmentPacking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShrinkage.designer.vb">
+      <DependentUpon>frmShrinkage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShrinkage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffNew.designer.vb">
+      <DependentUpon>frmStaffNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitEdit.designer.vb">
+      <DependentUpon>frmUnitEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewJobWork.designer.vb">
+      <DependentUpon>frmViewJobWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewJobWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewUnit.designer.vb">
+      <DependentUpon>frmViewUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Padok.designer.vb">
+      <DependentUpon>Padok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Padok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padok_dataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Padok_dataDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAttendence.resx">
+      <DependentUpon>frmAttendence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAttendenceDetail.resx">
+      <DependentUpon>frmAttendenceDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAttendenceRegister.resx">
+      <DependentUpon>frmAttendenceRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryCreate.resx">
+      <DependentUpon>frmCategoryCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryEdit.resx">
+      <DependentUpon>frmCategoryEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryVIew.resx">
+      <DependentUpon>frmCategoryVIew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrentStock.resx">
+      <DependentUpon>frmCurrentStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCutting.resx">
+      <DependentUpon>frmCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuttingView.resx">
+      <DependentUpon>frmCuttingView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDayBook.resx">
+      <DependentUpon>frmDayBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDayBookView.resx">
+      <DependentUpon>frmDayBookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupCreate.resx">
+      <DependentUpon>frmGroupCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupEdit.resx">
+      <DependentUpon>frmGroupEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupView.resx">
+      <DependentUpon>frmGroupView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemEdit.resx">
+      <DependentUpon>frmItemEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemView.resx">
+      <DependentUpon>frmItemView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJob-Issue.resx">
+      <DependentUpon>frmJob-Issue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobWorkReceive.resx">
+      <DependentUpon>frmJobWorkReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobWorkReceived.resx">
+      <DependentUpon>frmJobWorkReceived.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerCreate.resx">
+      <DependentUpon>frmLedgerCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerEdit.resx">
+      <DependentUpon>frmLedgerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerView.resx">
+      <DependentUpon>frmLedgerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLink.resx">
+      <DependentUpon>frmLink.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewItem.resx">
+      <DependentUpon>frmNewItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewJobWorker.resx">
+      <DependentUpon>frmNewJobWorker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewSupplier.resx">
+      <DependentUpon>frmNewSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewUnit.resx">
+      <DependentUpon>frmNewUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseEdit.resx">
+      <DependentUpon>frmPurchaseEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseEditDetail.resx">
+      <DependentUpon>frmPurchaseEditDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseNew.resx">
+      <DependentUpon>frmPurchaseNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseView.resx">
+      <DependentUpon>frmPurchaseView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsCreate.resx">
+      <DependentUpon>frmReportsCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesNew.resx">
+      <DependentUpon>frmSalesNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPurId.resx">
+      <DependentUpon>frmSelectPurId.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShipmentPacking.resx">
+      <DependentUpon>frmShipmentPacking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShrinkage.resx">
+      <DependentUpon>frmShrinkage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffNew.resx">
+      <DependentUpon>frmStaffNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnitEdit.resx">
+      <DependentUpon>frmUnitEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewJobWork.resx">
+      <DependentUpon>frmViewJobWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewUnit.resx">
+      <DependentUpon>frmViewUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padok.resx">
+      <DependentUpon>Padok.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Padok_dataDataSet.xsc">
+      <DependentUpon>Padok_dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Padok_dataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Padok_dataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Padok_dataDataSet.xss">
+      <DependentUpon>Padok_dataDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Padok_data.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Padok_data_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Padok_data.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
